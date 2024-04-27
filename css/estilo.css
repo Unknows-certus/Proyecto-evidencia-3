@@ -1,0 +1,352 @@
+/* Importar la fuente 'Poppins' desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* Estilos generales */
+* {
+  margin: 0; /* Eliminar margen */
+  padding: 0; /* Eliminar relleno */
+  box-sizing: border-box; /* Incluir el borde y el relleno en el tamaño total */
+  text-decoration: none; /* Eliminar decoración de texto */
+  list-style: none; /* Eliminar viñetas de lista */
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: "Poppins", sans-serif; /* Fuente para el cuerpo del documento */
+  text-transform: capitalize; /* Transformar texto en mayúsculas */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilos para el encabezado */
+.header {
+  /* Imagen de fondo con gradiente */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://static.mercadonegro.pe/wp-content/uploads/2021/08/11183717/Caficultores-Peru%CC%81-1.jpg);
+  background-position: center bottom; /* Posición de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo al tamaño del contenedor */
+  min-height: 70vh; /* Altura mínima del encabezado */
+  display: flex; /* Mostrar como flexbox */
+  align-items: center; /* Alinear elementos verticalmente */
+}
+
+/* Estilos para el menú */
+.menu {
+  position: absolute; /* Posición absoluta */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex; /* Mostrar como flexbox */
+  align-items: center; /* Alinear elementos verticalmente */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+}
+
+/* Estilos para el logotipo */
+.logo {
+  color: #fffdfc; /* Color del texto */
+  font-size: 25px; /* Tamaño de la fuente */
+  font-weight: 800; /* Grosor de la fuente */
+}
+
+/* Estilos para los enlaces del menú */
+.menu .navbar ul li {
+  position: relative; /* Posición relativa */
+  float: left; /* Flotar a la izquierda */
+}
+
+.menu .navbar ul li a {
+  font-size: 18px; /* Tamaño de la fuente */
+  padding: 20px; /* Relleno */
+  color: #fffdfc; /* Color del texto */
+  display: block; /* Mostrar como bloque */
+  font-weight: 600; /* Grosor de la fuente */
+}
+
+.menu .navbar ul li a:hover {
+  color: #ce9678; /* Color del texto al pasar el mouse */
+}
+
+/* Estilos para el ícono del menú */
+.menu-icono {
+  width: 25px; /* Ancho del ícono */
+}
+
+.menu label {
+  cursor: pointer; /* Cambiar cursor a puntero */
+  display: none; /* No mostrar */
+}
+
+/* Estilos para el contenido del encabezado */
+.header-content {
+  text-align: center; /* Alinear texto al centro */
+}
+
+.header-content h1 {
+  font-size: 75px; /* Tamaño de la fuente */
+  line-height: 80px; /* Altura de línea */
+  color: #f9fafc; /* Color del texto */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  margin-bottom: 35px; /* Margen inferior */
+}
+
+.header-content p {
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #c5c5c5; /* Color del texto */
+  padding: 0 250px; /* Relleno horizontal */
+  margin-bottom: 25px; /* Margen inferior */
+}
+
+.btn-1 {
+  display: inline-block; /* Mostrar como bloque */
+  padding: 11px 35px; /* Relleno */
+  background-color: #ce967b; /* Color de fondo */
+  color: #f9fafc; /* Color del texto */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+}
+
+.btn-1:hover {
+  background-color: #ce967b; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para la sección de café */
+.coffee {
+  padding: 100px 0; /* Relleno */
+  background-color: #e1e2e6; /* Color de fondo */
+  position: relative; /* Posición relativa */
+}
+
+.coffee-content {
+  text-align: center; /* Alinear texto al centro */
+}
+
+.coffee-content h2 {
+  font-size: 55px; /* Tamaño de la fuente */
+  line-height: 70px; /* Altura de línea */
+  color: #323337; /* Color del texto */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  padding: 0 250px; /* Relleno horizontal */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+.txt-p {
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #414247; /* Color del texto */
+  padding: 0 250px; /* Relleno horizontal */
+  margin-bottom: 35px; /* Margen inferior */
+}
+
+.coffee.group {
+  display: flex; /* Mostrar como flexbox */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+.coffee-1 {
+  padding: 0 25px; /* Relleno */
+}
+
+.coffee-1 img {
+  width: 200px; /* Ancho de la imagen */
+}
+
+.coffee-img {
+  position: absolute; /* Posición absoluta */
+  top: 0;
+  right: 0;
+}
+
+.coffee-1 h3 {
+  color: #323337; /* Color del texto */
+  font-size: 20px; /* Tamaño de la fuente */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para la sección de servicios */
+.services {
+  /* Imagen de fondo con gradiente */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://www.nescafe.com/pe/sites/default/files/styles/text_details_large/public/cafe-desktop.png?itok=RTWoL7pa);
+  background-position: center; /* Posición de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo al tamaño del contenedor */
+  background-attachment: fixed; /* Fijar la imagen de fondo */
+  padding: 100px 0; /* Relleno */
+}
+
+.services-content {
+  text-align: center; /* Alinear texto al centro */
+}
+
+.services-content h2 {
+  font-size: 55px; /* Tamaño de la fuente */
+  line-height: 70px; /* Altura de línea */
+  color: #f9fafc; /* Color del texto */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+.services-content p {
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #c5c5c5; /* Color del texto */
+  margin-bottom: 50px; /* Margen inferior */
+  padding: 0 100px; /* Relleno horizontal */
+}
+
+.services-group {
+  display: flex; /* Mostrar como flexbox */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+  margin-bottom: 50px; /* Margen inferior */
+}
+
+.services-1 {
+  padding: 0 100px; /* Relleno */
+}
+
+.services-1 img {
+  width: 25px; /* Ancho de la imagen */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+.services-1 h3 {
+  color: #eaccb3; /* Color del texto */
+  font-size: 18px; /* Tamaño de la fuente */
+}
+
+/* Estilos para la sección general */
+.general {
+  display: 15px; /* Mostrar como bloque */
+}
+
+.general-1 {
+  width: 50%; /* Ancho del elemento */
+  padding: 100px 250px 100px 100px; /* Relleno */
+  background-color: #e1e2e6; /* Color de fondo */
+}
+
+.general-2 {
+  background-image: url(img/.cafe-1); /* Imagen de fondo */
+  background-position: center center; /* Posición de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo al tamaño del contenedor */
+  width: 50%; /* Ancho del elemento */
+}
+
+.general-3 {
+  background-image: url(img/.cafe-1); /* Imagen de fondo */
+  background-position: center center; /* Posición de la imagen de fondo */
+  background-repeat: no-repeat; /* No repetir la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo al tamaño del contenedor */
+  width: 50%; /* Ancho del elemento */
+}
+
+h2 {
+  font-size: 55px; /* Tamaño de la fuente */
+  line-height: 70px; /* Altura de línea */
+  color: #323337; /* Color del texto */
+  text-transform: uppercase; /* Transformar texto a mayúsculas */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+p {
+  font-size: 16px; /* Tamaño de la fuente */
+  color: #414247; /* Color del texto */
+  margin: 25px 0 45px 0; /* Margen */
+}
+
+/* Estilos para la sección de blog */
+.blog {
+  padding: 100px 0; /* Relleno */
+  text-align: center; /* Alinear texto al centro */
+}
+
+.blog-content {
+  display: flex; /* Mostrar como flexbox */
+  justify-content: space-between; /* Espaciado uniforme entre elementos */
+}
+
+.blog-1 {
+  padding: 15px 55px; /* Relleno */
+}
+
+.blog-1 img {
+  width: 250px; /* Ancho de la imagen */
+  border-radius: 15px; /* Radio del borde */
+  margin-bottom: 15px; /* Margen inferior */
+}
+
+.blog-1 h3 {
+  font-size: 25px; /* Tamaño de la fuente */
+  color: #323337; /* Color del texto */
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: dimgrey; /* Color de fondo */
+  padding: 80px 0; /* Relleno */
+}
+
+.footer-row {
+  display: flex; /* Mostrar como flexbox */
+  flex-wrap: wrap; /* Envolver elementos en varias líneas */
+}
+
+.footer-links {
+  width: 25%; /* Ancho del elemento */
+  padding: 0 15px; /* Relleno */
+}
+
+.footer-links h4 {
+  font-size: 20px; /* Tamaño de la fuente */
+  color: #ffffff; /* Color del texto */
+  margin-bottom: 20px; /* Margen inferior */
+  font-weight: 500; /* Grosor de la fuente */
+  border-bottom: 2px solid #00c3ff; /* Borde inferior */
+  padding-bottom: 10px; /* Relleno inferior */
+  display: inline-block; /* Mostrar como bloque */
+}
+
+.footer-links ul li a {
+  font-size: 10px; /* Tamaño de la fuente */
+  text-decoration: none; /* Sin decoración de texto */
+  color: #bbbbbb; /* Color del texto */
+  display: block; /* Mostrar como bloque */
+  margin-bottom: 15px; /* Margen inferior */
+  transition: all 0.3s ease; /* Transición */
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff; /* Color del texto al pasar el mouse */
+  padding-left: 6px; /* Relleno izquierdo */
+}
+
+.social-links a {
+  display: inline-block; /* Mostrar como bloque */
+  min-height: 40px; /* Altura mínima */
+  width: 40px; /* Ancho */
+  background-color: rgba(255, 255, 255, 0.2); /* Color de fondo */
+  margin: 0 10px 10px 0; /* Margen */
+  text-align: center; /* Alinear texto al centro */
+  line-height: 40px; /* Altura de línea */
+  border-radius: 50%; /* Radio del borde */
+  color: #ffffff; /* Color del texto */
+  transition: all 0.5s ease; /* Transición */
+}
+
+.social-links a {
+  background-color: #00c3ff; /* Color de fondo */
+}
+
+@media (max-width: 991px) {
+  .footer-row {
+    text-align: center; /* Alinear texto al centro */
+  }
+  .footer-links {
+    width: 100%; /* Ancho del elemento */
+    margin-bottom: 30px; /* Margen inferior */
+  }
+}
