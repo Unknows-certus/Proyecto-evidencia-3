@@ -350,3 +350,18 @@ p {
     margin-bottom: 30px; /* Margen inferior */
   }
 }
+
+/* Utiliza preprocesadores para una mejor organización
+Media queries para diseño responsivo */
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas */
+}
+
+/* Animaciones y transiciones */
+.btn-1 {
+  transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+  background-color: #ce967b;
+}
